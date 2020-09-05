@@ -10,7 +10,7 @@ class Contacts extends Component {
   //             {
   //                 name: 'Mahesh Soni',
   //                 email: 'sms@gmail.com',
-  //                 phome: '8980829961'
+  //                 phone: '8980829961'
   //             }
   //         ]
   //     }
