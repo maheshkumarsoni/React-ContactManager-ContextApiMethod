@@ -5,8 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Provider } from "./context";
 import AddContact from "./components/contacts/AddContact";
 import About from "./components/pages/About";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom"; //it's not working with github pages so do the below one
-// import { HashRouter as Router, Route, Switch } from "react-router-dom"; // use it for GitHub Paged deploy
+// import { BrowserRouter as Router, Route, Switch } from "react-router-dom"; //it's not working with github pages so do the below one
+import { HashRouter as Router, Route, Switch } from "react-router-dom"; // use it for GitHub Paged deploy
 import NotFound from "./components/pages/NotFound";
 import Test from "./components/test/Test";
 import EditContact from "./components/contacts/EditContact";
@@ -14,8 +14,8 @@ import EditContact from "./components/contacts/EditContact";
 function App() {
   return (
     <Provider>
-      {/* <Router> */}
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
+        {/* <Router basename={process.env.PUBLIC_URL}> */}
         {/* do above to work with browser router on github pages if not work then use HashRouter*/}
         <div className="App">
           <Header branding="Contact Manager" />
