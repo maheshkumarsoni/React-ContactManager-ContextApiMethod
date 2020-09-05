@@ -14,8 +14,9 @@ import EditContact from "./components/contacts/EditContact";
 function App() {
   return (
     <Provider>
-      <Router>
-        {/* <Router basename={process.env.PUBLIC_URL}> do this to work with browser router*/}
+      {/* <Router> */}
+      <Router basename={process.env.PUBLIC_URL}>
+        {/* do above to work with browser router on github pages if not work then use HashRouter*/}
         <div className="App">
           <Header branding="Contact Manager" />
           <div className="container">
